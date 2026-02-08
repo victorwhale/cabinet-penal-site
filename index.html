@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Morel Defense Penale | Avocat Penaliste Paris</title>
+  <meta name="description" content="Cabinet Morel Defence Penale - Avocat penaliste a Paris. Garde a vue, droit penal des affaires, comparution immediate. Intervention 24h/24.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --white-warm: #FDFBF7;
+      --cream: #F5F0E8;
+      --cream-dark: #EDE6D8;
+      --charcoal: #1A1A2E;
+      --charcoal-light: #2A2A3E;
+      --navy: #1C1C28;
+      --burgundy: #7C2D36;
+      --burgundy-dark: #5E1F28;
+      --burgundy-light: #8B2252;
+      --gold: #B8860B;
+      --gold-light: #D4A843;
+      --text-dark: #2C2C3A;
+      --text-medium: #4A4A5E;
+      --text-light: #6E6E82;
+      --border-light: #E0D8CC;
+      --shadow-sm: 0 1px 3px rgba(26, 26, 46, 0.06);
+      --shadow-md: 0 4px 16px rgba(26, 26, 46, 0.08);
+      --shadow-lg: 0 8px 32px rgba(26, 26, 46, 0.12);
+      --shadow-xl: 0 16px 48px rgba(26, 26, 46, 0.16);
+      --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      background: var(--white-warm);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* ===== UTILITY ===== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container--narrow {
+      max-width: 900px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ===== NAVIGATION ===== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(253, 251, 247, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid transparent;
+      transition: var(--transition-base);
+    }
+
+    .nav.scrolled {
+      border-bottom-color: var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .nav__brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      line-height: 1.2;
+    }
+
+    .nav__brand-name {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      letter-spacing: 0.02em;
+    }
+
+    .nav__brand-sub {
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: var(--burgundy);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav__link {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-medium);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      position: relative;
+      transition: color var(--transition-base);
+    }
+
+    .nav__link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--burgundy);
+      transition: width var(--transition-base);
+    }
+
+    .nav__link:hover {
+      color: var(--charcoal);
+    }
+
+    .nav__link:hover::after {
+      width: 100%;
+    }
+
+    .nav__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 24px;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--white-warm);
+      background: var(--burgundy);
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: background var(--transition-base), transform var(--transition-base);
+      cursor: pointer;
+    }
+
+    .nav__cta:hover {
+      background: var(--burgundy-dark);
+      transform: translateY(-1px);
+    }
+
+    .nav__hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .nav__hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--charcoal);
+      border-radius: 2px;
+      transition: var(--transition-base);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(170deg, var(--charcoal) 0%, var(--navy) 50%, #12121E 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 20%, rgba(124, 45, 54, 0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 20% 80%, rgba(124, 45, 54, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 40%, rgba(124, 45, 54, 0.03) 100%);
+      pointer-events: none;
+    }
+
+    .hero__pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(-45deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 140px 0 100px;
+      max-width: 780px;
+    }
+
+    .hero__tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 32px;
+      padding: 8px 20px;
+      background: rgba(124, 45, 54, 0.15);
+      border: 1px solid rgba(124, 45, 54, 0.25);
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      opacity: 0;
+      animation: fadeInUp 0.8s 0.3s forwards;
+    }
+
+    .hero__tag-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--burgundy);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.2); }
+    }
+
+    .hero__title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      font-weight: 600;
+      color: var(--white-warm);
+      line-height: 1.15;
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeInUp 0.8s 0.5s forwards;
+    }
+
+    .hero__title em {
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+    }
+
+    .hero__subtitle {
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.8;
+      margin-bottom: 48px;
+      max-width: 580px;
+      opacity: 0;
+      animation: fadeInUp 0.8s 0.7s forwards;
+    }
+
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeInUp 0.8s 0.9s forwards;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: all var(--transition-base);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn--primary {
+      color: var(--white-warm);
+      background: var(--burgundy);
+      box-shadow: 0 4px 20px rgba(124, 45, 54, 0.35);
+    }
+
+    .btn--primary:hover {
+      background: var(--burgundy-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(124, 45, 54, 0.45);
+    }
+
+    .btn--ghost {
+      color: rgba(255, 255, 255, 0.8);
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn--ghost:hover {
+      color: var(--white-warm);
+      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hero__decoration {
+      position: absolute;
+      right: -60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 500px;
+      height: 500px;
+      opacity: 0.04;
+      pointer-events: none;
+    }
+
+    .hero__decoration svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      animation: fadeInUp 0.8s 1.2s forwards;
+      opacity: 0;
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+      animation: scrollDown 2s infinite;
+    }
+
+    @keyframes scrollDown {
+      0% { transform: scaleY(0); transform-origin: top; }
+      50% { transform: scaleY(1); transform-origin: top; }
+      51% { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== URGENCE BAR ===== */
+    .urgence {
+      position: relative;
+      background: var(--burgundy);
+      overflow: hidden;
+    }
+
+    .urgence::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, var(--burgundy-dark), var(--burgundy), var(--burgundy-dark));
+    }
+
+    .urgence__inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 18px 24px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .urgence__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .urgence__icon svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+    }
+
+    .urgence__text {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: white;
+      letter-spacing: 0.01em;
+    }
+
+    .urgence__text strong {
+      font-weight: 700;
+    }
+
+    .urgence__phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 28px;
+      background: white;
+      color: var(--burgundy);
+      font-size: 0.9rem;
+      font-weight: 700;
+      border-radius: 100px;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-base);
+      white-space: nowrap;
+    }
+
+    .urgence__phone:hover {
+      background: var(--white-warm);
+      transform: scale(1.03);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ===== SECTION COMMON ===== */
+    .section {
+      padding: 120px 0;
+    }
+
+    .section--cream {
+      background: var(--cream);
+    }
+
+    .section--dark {
+      background: linear-gradient(170deg, var(--charcoal) 0%, var(--navy) 100%);
+      color: var(--white-warm);
+    }
+
+    .section__header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+
+    .section__label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 16px;
+    }
+
+    .section--dark .section__label {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .section__title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 600;
+      color: var(--charcoal);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .section--dark .section__title {
+      color: var(--white-warm);
+    }
+
+    .section__desc {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .section--dark .section__desc {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* ===== EXPERTISES ===== */
+    .expertises__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    .expertise-card {
+      position: relative;
+      padding: 40px 36px;
+      background: var(--white-warm);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      transition: all var(--transition-base);
+      overflow: hidden;
+    }
+
+    .expertise-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--burgundy), var(--burgundy-light));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition-base);
+    }
+
+    .expertise-card:hover {
+      border-color: transparent;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .expertise-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .expertise-card__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, rgba(124, 45, 54, 0.08), rgba(124, 45, 54, 0.03));
+      border-radius: 14px;
+      margin-bottom: 24px;
+    }
+
+    .expertise-card__icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: var(--burgundy);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .expertise-card__title {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .expertise-card__desc {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ===== APPROCHE ===== */
+    .approche {
+      position: relative;
+    }
+
+    .approche__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .approche__content {
+      max-width: 520px;
+    }
+
+    .approche__title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 600;
+      color: var(--charcoal);
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+
+    .approche__text {
+      font-size: 1rem;
+      color: var(--text-medium);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+
+    .approche__quote {
+      position: relative;
+      padding: 28px 32px;
+      margin-top: 36px;
+      background: linear-gradient(135deg, rgba(124, 45, 54, 0.04), rgba(124, 45, 54, 0.01));
+      border-left: 3px solid var(--burgundy);
+      border-radius: 0 12px 12px 0;
+    }
+
+    .approche__quote p {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    .approche__quote cite {
+      display: block;
+      margin-top: 12px;
+      font-family: var(--font-body);
+      font-style: normal;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--burgundy);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .approche__pillars {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .pillar {
+      display: flex;
+      gap: 20px;
+      padding: 28px;
+      background: var(--white-warm);
+      border: 1px solid var(--border-light);
+      border-radius: 14px;
+      transition: all var(--transition-base);
+    }
+
+    .pillar:hover {
+      border-color: transparent;
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
+    }
+
+    .pillar__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background: var(--charcoal);
+      color: var(--white-warm);
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .pillar__content h4 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 6px;
+    }
+
+    .pillar__content p {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    /* ===== CHIFFRES ===== */
+    .chiffres__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .chiffre {
+      text-align: center;
+      padding: 48px 32px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      transition: all var(--transition-base);
+    }
+
+    .chiffre:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.12);
+      transform: translateY(-4px);
+    }
+
+    .chiffre__value {
+      font-family: var(--font-heading);
+      font-size: clamp(2.8rem, 4vw, 3.8rem);
+      font-weight: 700;
+      color: var(--white-warm);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .chiffre__value span {
+      color: var(--burgundy-light);
+    }
+
+    .chiffre__label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 12px;
+    }
+
+    .chiffre__desc {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.4);
+      line-height: 1.6;
+    }
+
+    /* ===== TEMOIGNAGES ===== */
+    .temoignages__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .temoignage {
+      padding: 40px 36px;
+      background: var(--white-warm);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      transition: all var(--transition-base);
+    }
+
+    .temoignage:hover {
+      border-color: transparent;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+
+    .temoignage__stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+
+    .temoignage__stars svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--gold-light);
+    }
+
+    .temoignage__text {
+      font-size: 0.95rem;
+      color: var(--text-medium);
+      line-height: 1.8;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .temoignage__author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .temoignage__avatar {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--cream-dark), var(--cream));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--burgundy);
+    }
+
+    .temoignage__name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--charcoal);
+    }
+
+    .temoignage__context {
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .contact__info {
+      padding-right: 40px;
+    }
+
+    .contact__info-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .contact__info-text {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .contact__detail {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .contact__detail-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, rgba(124, 45, 54, 0.08), rgba(124, 45, 54, 0.03));
+      border-radius: 14px;
+      flex-shrink: 0;
+    }
+
+    .contact__detail-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--burgundy);
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .contact__detail-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+
+    .contact__detail-value {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    .contact__detail-value a {
+      color: var(--charcoal);
+      text-decoration: none;
+      transition: color var(--transition-base);
+    }
+
+    .contact__detail-value a:hover {
+      color: var(--burgundy);
+    }
+
+    .contact__form-wrapper {
+      background: var(--white-warm);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 44px;
+    }
+
+    .contact__form-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 8px;
+    }
+
+    .contact__form-sub {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 32px;
+    }
+
+    .form__group {
+      margin-bottom: 20px;
+    }
+
+    .form__label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-medium);
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+
+    .form__input,
+    .form__textarea,
+    .form__select {
+      width: 100%;
+      padding: 14px 18px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      background: var(--cream);
+      border: 1px solid transparent;
+      border-radius: 10px;
+      outline: none;
+      transition: all var(--transition-base);
+    }
+
+    .form__input:focus,
+    .form__textarea:focus,
+    .form__select:focus {
+      background: var(--white-warm);
+      border-color: var(--burgundy);
+      box-shadow: 0 0 0 3px rgba(124, 45, 54, 0.08);
+    }
+
+    .form__input::placeholder,
+    .form__textarea::placeholder {
+      color: var(--text-light);
+    }
+
+    .form__textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form__submit {
+      width: 100%;
+      padding: 16px 32px;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--white-warm);
+      background: var(--charcoal);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: all var(--transition-base);
+      margin-top: 8px;
+    }
+
+    .form__submit:hover {
+      background: var(--burgundy);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(124, 45, 54, 0.25);
+    }
+
+    .form__disclaimer {
+      font-size: 0.72rem;
+      color: var(--text-light);
+      margin-top: 16px;
+      line-height: 1.6;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--charcoal);
+      color: rgba(255, 255, 255, 0.6);
+      padding: 80px 0 40px;
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+
+    .footer__brand-name {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--white-warm);
+      margin-bottom: 8px;
+    }
+
+    .footer__brand-sub {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--burgundy-light);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 20px;
+    }
+
+    .footer__brand-text {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      max-width: 320px;
+    }
+
+    .footer__col-title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--white-warm);
+      margin-bottom: 24px;
+    }
+
+    .footer__links {
+      list-style: none;
+    }
+
+    .footer__links li {
+      margin-bottom: 12px;
+    }
+
+    .footer__links a {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      transition: color var(--transition-base);
+    }
+
+    .footer__links a:hover {
+      color: var(--white-warm);
+    }
+
+    .footer__bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer__copy {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .footer__legal {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer__legal a {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+      transition: color var(--transition-base);
+    }
+
+    .footer__legal a:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .approche__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .approche__content {
+        max-width: 100%;
+      }
+
+      .contact__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .contact__info {
+        padding-right: 0;
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav__links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--white-warm);
+        padding: 24px;
+        gap: 20px;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: var(--shadow-md);
+      }
+
+      .nav__links.open {
+        display: flex;
+      }
+
+      .nav__hamburger {
+        display: flex;
+      }
+
+      .nav__hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .nav__hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .nav__hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      .section {
+        padding: 80px 0;
+      }
+
+      .section__header {
+        margin-bottom: 48px;
+      }
+
+      .expertises__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .chiffres__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .chiffre {
+        padding: 32px 24px;
+      }
+
+      .temoignages__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form__row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer__bar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero__actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .urgence__inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero__content {
+        padding: 120px 0 80px;
+      }
+
+      .expertise-card {
+        padding: 28px 24px;
+      }
+
+      .contact__form-wrapper {
+        padding: 28px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__brand">
+        <span class="nav__brand-name">Cabinet Morel</span>
+        <span class="nav__brand-sub">Defense Penale</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#expertises" class="nav__link">Expertises</a></li>
+        <li><a href="#approche" class="nav__link">Notre approche</a></li>
+        <li><a href="#chiffres" class="nav__link">Le cabinet</a></li>
+        <li><a href="#temoignages" class="nav__link">Temoignages</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li><a href="tel:+33142659830" class="nav__cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Urgence 24h/24
+        </a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__pattern"></div>
+    <div class="container hero__content">
+      <div class="hero__tag">
+        <span class="hero__tag-dot"></span>
+        Disponible 24h/24 &mdash; Intervention immediate
+      </div>
+      <h1 class="hero__title">
+        Votre liberte merite<br><em>la meilleure defense.</em>
+      </h1>
+      <p class="hero__subtitle">
+        Garde a vue, comparution immediate, instruction penale &mdash; le Cabinet Morel intervient a chaque etape de la procedure penale pour proteger vos droits et votre avenir.
+      </p>
+      <div class="hero__actions">
+        <a href="tel:+33142659830" class="btn btn--primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          01 42 65 98 30
+        </a>
+        <a href="#expertises" class="btn btn--ghost">Nos domaines d'intervention</a>
+      </div>
+    </div>
+    <div class="hero__decoration">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="180" fill="none" stroke="white" stroke-width="0.5"/>
+        <circle cx="200" cy="200" r="140" fill="none" stroke="white" stroke-width="0.3"/>
+        <circle cx="200" cy="200" r="100" fill="none" stroke="white" stroke-width="0.3"/>
+        <line x1="200" y1="20" x2="200" y2="380" stroke="white" stroke-width="0.3"/>
+        <line x1="20" y1="200" x2="380" y2="200" stroke="white" stroke-width="0.3"/>
+      </svg>
+    </div>
+    <a href="#urgence" class="hero__scroll">
+      Decouvrir
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ===== URGENCE BAR ===== -->
+  <section class="urgence" id="urgence">
+    <div class="container urgence__inner">
+      <div class="urgence__icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-14v4m0 4h.01"/></svg>
+      </div>
+      <span class="urgence__text">
+        <strong>Garde a vue ? Urgence penale ?</strong> Intervention immediate partout en Ile-de-France.
+      </span>
+      <a href="tel:+33142659830" class="urgence__phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        01 42 65 98 30
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== EXPERTISES ===== -->
+  <section class="section section--cream" id="expertises">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Domaines d'intervention</span>
+        <h2 class="section__title">Une defense penale<br>sur tous les fronts</h2>
+        <p class="section__desc">
+          Le Cabinet Morel vous assiste et vous represente dans l'ensemble des contentieux penaux, de l'urgence de la garde a vue jusqu'au proces en appel.
+        </p>
+      </div>
+      <div class="expertises__grid">
+
+        <!-- Card 1 -->
+        <div class="expertise-card reveal reveal-delay-1">
+          <div class="expertise-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="expertise-card__title">Garde a vue et defense d'urgence</h3>
+          <p class="expertise-card__desc">
+            Intervention immediate 24h/24 en garde a vue. Nous assurons la presence d'un avocat des la premiere heure pour proteger vos droits fondamentaux et preparer votre defense.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="expertise-card reveal reveal-delay-2">
+          <div class="expertise-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3 class="expertise-card__title">Droit penal des affaires</h3>
+          <p class="expertise-card__desc">
+            Abus de biens sociaux, fraude fiscale, abus de confiance, escroquerie, blanchiment. Une defense strategique pour les dirigeants et entreprises face aux poursuites penales.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="expertise-card reveal reveal-delay-3">
+          <div class="expertise-card__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 class="expertise-card__title">Droit penal general</h3>
+          <p class="expertise-card__desc">
+            Violences, infractions routieres, stupefiants, atteintes aux biens, menaces. Defense vigoureuse devant le tribunal correctionnel et la cour d'assises.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="expertise-card reveal reveal-delay-4">
+          <div class="expertise-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="expertise-card__title">Comparution immediate</h3>
+          <p class="expertise-card__desc">
+            Defense urgente lors des audiences de comparution immediate. Preparation rapide du dossier, negociation avec le parquet et plaidoirie devant le tribunal.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="expertise-card reveal reveal-delay-5">
+          <div class="expertise-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="expertise-card__title">Droit penal du travail</h3>
+          <p class="expertise-card__desc">
+            Harcelement moral et sexuel, travail dissimule, discrimination, accidents du travail. Defense des salaries et des employeurs devant les juridictions penales.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="expertise-card reveal reveal-delay-5">
+          <div class="expertise-card__icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="expertise-card__title">Victimes d'infractions</h3>
+          <p class="expertise-card__desc">
+            Constitution de partie civile, accompagnement des victimes tout au long de la procedure. Obtention de reparation integrale du prejudice subi devant les juridictions penales.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPROCHE ===== -->
+  <section class="section" id="approche">
+    <div class="container">
+      <div class="approche__grid">
+        <div class="approche__content reveal">
+          <span class="section__label">Notre philosophie</span>
+          <h2 class="approche__title">La presomption d'innocence n'est pas un detail de procedure.</h2>
+          <p class="approche__text">
+            Au Cabinet Morel, chaque dossier est une cause. Nous croyons fermement que la qualite de la defense est le fondement d'une justice equitable. C'est pourquoi nous preparons chaque affaire avec la rigueur et l'engagement qu'elle merite.
+          </p>
+          <p class="approche__text">
+            Notre approche allie une connaissance approfondie du droit penal, une strategie de defense pensee sur mesure, et une presence constante aux cotes de nos clients &mdash; de la premiere audition jusqu'au delibere.
+          </p>
+          <div class="approche__quote">
+            <p>&laquo;&nbsp;La defense n'est pas un privilege. C'est un droit fondamental, et nous le portons avec conviction.&nbsp;&raquo;</p>
+            <cite>Me Catherine Morel, Fondatrice</cite>
+          </div>
+        </div>
+        <div class="approche__pillars reveal reveal-delay-2">
+          <div class="pillar">
+            <div class="pillar__number">01</div>
+            <div class="pillar__content">
+              <h4>Reactivite absolue</h4>
+              <p>Intervention sous une heure en garde a vue, disponibilite permanente pour les urgences penales, week-ends et jours feries inclus.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__number">02</div>
+            <div class="pillar__content">
+              <h4>Preparation exhaustive</h4>
+              <p>Analyse complete du dossier penal, identification de chaque vice de procedure, construction d'une strategie de defense solide et argumentee.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__number">03</div>
+            <div class="pillar__content">
+              <h4>Defense combative et ethique</h4>
+              <p>Plaidoirie engagee et rigoureuse, respect du contradictoire, negociation eclairee avec le parquet quand l'interet du client le commande.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__number">04</div>
+            <div class="pillar__content">
+              <h4>Accompagnement humain</h4>
+              <p>Ecoute attentive, explication claire de chaque etape de la procedure, transparence totale sur la strategie et les perspectives du dossier.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHIFFRES ===== -->
+  <section class="section section--dark" id="chiffres">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Le cabinet en chiffres</span>
+        <h2 class="section__title">Deux decennies au service<br>de la defense penale</h2>
+        <p class="section__desc">
+          Depuis 2004, le Cabinet Morel defend les droits de ses clients avec determination et expertise devant les juridictions parisiennes et nationales.
+        </p>
+      </div>
+      <div class="chiffres__grid">
+        <div class="chiffre reveal reveal-delay-1">
+          <div class="chiffre__value">800<span>+</span></div>
+          <div class="chiffre__label">Clients defendus</div>
+          <p class="chiffre__desc">Particuliers, dirigeants et entreprises assistes devant les juridictions penales de toute la France.</p>
+        </div>
+        <div class="chiffre reveal reveal-delay-2">
+          <div class="chiffre__value">20 <span>ans</span></div>
+          <div class="chiffre__label">Au Barreau de Paris</div>
+          <p class="chiffre__desc">Deux decennies d'experience en droit penal, du tribunal de police a la cour d'assises.</p>
+        </div>
+        <div class="chiffre reveal reveal-delay-3">
+          <div class="chiffre__value">&lt;1<span>h</span></div>
+          <div class="chiffre__label">Intervention en garde a vue</div>
+          <p class="chiffre__desc">Deploiement immediat d'un avocat dans les commissariats et gendarmeries d'Ile-de-France.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMOIGNAGES ===== -->
+  <section class="section section--cream" id="temoignages">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Temoignages</span>
+        <h2 class="section__title">La parole a ceux<br>que nous avons defendus</h2>
+        <p class="section__desc">
+          La confiance de nos clients est notre plus grande fierte. Voici quelques temoignages de personnes que nous avons accompagnees.
+        </p>
+      </div>
+      <div class="temoignages__grid">
+
+        <div class="temoignage reveal reveal-delay-1">
+          <div class="temoignage__stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="temoignage__text">
+            &laquo;&nbsp;Lorsque j'ai ete place en garde a vue, Me Morel est intervenue en moins d'une heure. Son calme, sa maitrise du dossier et sa combativite en audience ont ete determinants. Les charges ont ete abandonnees. Je lui dois enormement.&nbsp;&raquo;
+          </p>
+          <div class="temoignage__author">
+            <div class="temoignage__avatar">M.R.</div>
+            <div>
+              <div class="temoignage__name">M. R., Paris</div>
+              <div class="temoignage__context">Garde a vue &mdash; classement sans suite</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="temoignage reveal reveal-delay-2">
+          <div class="temoignage__stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="temoignage__text">
+            &laquo;&nbsp;Face a une accusation d'abus de biens sociaux qui menacait mon entreprise et ma reputation, le cabinet a construit une defense minutieuse. Apres deux ans de procedure, j'ai ete totalement relaxe. Un travail d'une rigueur exceptionnelle.&nbsp;&raquo;
+          </p>
+          <div class="temoignage__author">
+            <div class="temoignage__avatar">S.L.</div>
+            <div>
+              <div class="temoignage__name">S. L., Neuilly-sur-Seine</div>
+              <div class="temoignage__context">Droit penal des affaires &mdash; relaxe</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="temoignage reveal reveal-delay-3">
+          <div class="temoignage__stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="temoignage__text">
+            &laquo;&nbsp;Convoquee en comparution immediate, j'etais terrifiee. Me Morel a obtenu un renvoi, ce qui a permis de preparer serieusement ma defense. Le resultat a ete bien au-dela de mes esperances. Un immense merci.&nbsp;&raquo;
+          </p>
+          <div class="temoignage__author">
+            <div class="temoignage__avatar">A.B.</div>
+            <div>
+              <div class="temoignage__name">A. B., Boulogne-Billancourt</div>
+              <div class="temoignage__context">Comparution immediate &mdash; peine amenagee</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <span class="section__label">Prendre contact</span>
+          <h2 class="contact__info-title">Parlons de<br>votre situation.</h2>
+          <p class="contact__info-text">
+            Chaque affaire penale est unique. Contactez-nous pour un premier echange confidentiel et sans engagement. En cas d'urgence, notre ligne est disponible 24 heures sur 24.
+          </p>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact__detail-label">Telephone - Urgence 24h/24</div>
+              <div class="contact__detail-value"><a href="tel:+33142659830">01 42 65 98 30</a></div>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact__detail-label">Email</div>
+              <div class="contact__detail-value"><a href="mailto:contact@cabinet-morel.fr">contact@cabinet-morel.fr</a></div>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact__detail-label">Adresse</div>
+              <div class="contact__detail-value">
+                24, avenue Hoche<br>
+                75008 Paris
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact__detail-label">Horaires du cabinet</div>
+              <div class="contact__detail-value">
+                Lun &ndash; Ven : 9h00 &ndash; 19h00<br>
+                <span style="font-size: 0.85rem; color: var(--burgundy); font-weight: 600;">Urgences : 24h/24, 7j/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="contact__form-wrapper">
+            <h3 class="contact__form-title">Demande de rendez-vous</h3>
+            <p class="contact__form-sub">Nous vous recontactons sous 24 heures.</p>
+            <form action="#" method="post">
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" class="form__input" placeholder="Votre nom" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="prenom">Prenom</label>
+                  <input type="text" id="prenom" name="prenom" class="form__input" placeholder="Votre prenom" required>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="email">Email</label>
+                  <input type="email" id="email" name="email" class="form__input" placeholder="votre@email.fr" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="telephone">Telephone</label>
+                  <input type="tel" id="telephone" name="telephone" class="form__input" placeholder="06 XX XX XX XX">
+                </div>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="sujet">Domaine concerne</label>
+                <select id="sujet" name="sujet" class="form__select">
+                  <option value="" disabled selected>Selectionnez un domaine</option>
+                  <option value="garde-a-vue">Garde a vue / Urgence</option>
+                  <option value="penal-affaires">Droit penal des affaires</option>
+                  <option value="penal-general">Droit penal general</option>
+                  <option value="comparution">Comparution immediate</option>
+                  <option value="penal-travail">Droit penal du travail</option>
+                  <option value="victime">Constitution partie civile</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="message">Votre situation</label>
+                <textarea id="message" name="message" class="form__textarea" placeholder="Decrivez brievement votre situation ou vos questions. Toute information partagee reste strictement confidentielle." rows="5"></textarea>
+              </div>
+              <button type="submit" class="form__submit">Envoyer ma demande</button>
+              <p class="form__disclaimer">
+                En soumettant ce formulaire, vous acceptez que vos donnees soient traitees conformement a notre politique de confidentialite. Le secret professionnel s'applique a l'ensemble de nos echanges.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Cabinet Morel</div>
+          <div class="footer__brand-sub">Defense Penale</div>
+          <p class="footer__brand-text">
+            Cabinet d'avocats specialise en droit penal, inscrit au Barreau de Paris. Nous intervenons avec rigueur et engagement pour la defense de vos droits et de vos libertes.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Expertises</h4>
+          <ul class="footer__links">
+            <li><a href="#expertises">Garde a vue</a></li>
+            <li><a href="#expertises">Penal des affaires</a></li>
+            <li><a href="#expertises">Penal general</a></li>
+            <li><a href="#expertises">Comparution immediate</a></li>
+            <li><a href="#expertises">Penal du travail</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Le cabinet</h4>
+          <ul class="footer__links">
+            <li><a href="#approche">Notre approche</a></li>
+            <li><a href="#chiffres">Chiffres cles</a></li>
+            <li><a href="#temoignages">Temoignages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+33142659830">01 42 65 98 30</a></li>
+            <li><a href="mailto:contact@cabinet-morel.fr">contact@cabinet-morel.fr</a></li>
+            <li><a href="#">24, avenue Hoche</a></li>
+            <li><a href="#">75008 Paris</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <p class="footer__copy">&copy; 2024 Cabinet Morel Defense Penale. Tous droits reserves.</p>
+        <div class="footer__legal">
+          <a href="#">Mentions legales</a>
+          <a href="#">Politique de confidentialite</a>
+          <a href="#">Honoraires</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Navigation scroll effect
+    const nav = document.getElementById('nav');
+    let lastScrollY = 0;
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      lastScrollY = scrollY;
+    }, { passive: true });
+
+    // Mobile hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // Scroll reveal using IntersectionObserver
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -60px 0px'
+    });
+
+    revealElements.forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const navHeight = nav.offsetHeight;
+          const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Counter animation for chiffres section
+    const chiffreElements = document.querySelectorAll('.chiffre__value');
+    let chiffresAnimated = false;
+
+    const chiffresObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !chiffresAnimated) {
+          chiffresAnimated = true;
+          animateCounters();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const chiffresSection = document.getElementById('chiffres');
+    if (chiffresSection) {
+      chiffresObserver.observe(chiffresSection);
+    }
+
+    function animateCounters() {
+      // Animate 800+
+      animateValue(chiffreElements[0], 0, 800, 2000, '+');
+      // Animate 20
+      animateValue(chiffreElements[1], 0, 20, 1500, ' ans');
+    }
+
+    function animateValue(element, start, end, duration, suffix) {
+      if (!element) return;
+      const startTimestamp = performance.now();
+
+      function step(timestamp) {
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        const current = Math.floor(eased * (end - start) + start);
+
+        if (suffix === '+') {
+          element.innerHTML = current + '<span>+</span>';
+        } else if (suffix === ' ans') {
+          element.innerHTML = current + ' <span>ans</span>';
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      }
+
+      requestAnimationFrame(step);
+    }
+  </script>
+</body>
+</html>
